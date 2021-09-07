@@ -1,9 +1,12 @@
 <template>
   <nav class="container mx-auto py-2">
     <div class="flex justify-around place-items-center">
-      <div>
-        <img src="~/assets/img/logo.png" alt="" class="w-[170px]">
-      </div>
+      <NuxtLink :to="{ name: 'index' }" class="flex place-items-center">
+        <img src="~/assets/img/logo.png" alt="" class="w-[36px] pt-1.5">
+        <h1 class="pt-1.5 px-3 text-xl text-white">
+          Morgan Design
+        </h1>
+      </NuxtLink>
       <div>
         <nuxt-link :to="{ name: 'index' }" class="p-2">
           Home

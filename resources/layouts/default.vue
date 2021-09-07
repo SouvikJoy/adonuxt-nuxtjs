@@ -1,6 +1,6 @@
 <template>
   <div>
-    <header class="fixed w-full">
+    <header class="fixed w-full bg-black bg-opacity-[75%]">
       <Header />
     </header>
     <main>
