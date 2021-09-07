@@ -5,7 +5,11 @@ module.exports = {
   presets: [],
   darkMode: 'class',
   shortcuts: {
-    nuxt_link: 'p-6'
+    nuxt_link: 'p-6',
+    nuxt_link_exact_active: 'text-yellow-700 border-b-4 border-b-yellow-500',
+    nuxt_link_brand: '',
+
+    header_brand_container: 'p-6'
   },
   theme: {
     screens: {

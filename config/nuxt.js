@@ -46,7 +46,7 @@ module.exports = {
     classSuffix: ''
   },
   router: {
-    linkExactActiveClass: 'text-yellow-700 border-b-4 border-b-yellow-500'
+    linkExactActiveClass: 'nuxt_link_exact_active'
   },
   /*
   ** Global CSS
