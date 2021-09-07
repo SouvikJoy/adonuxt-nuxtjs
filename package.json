@@ -47,8 +47,10 @@
     "eslint-plugin-html": "^3.2.2",
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-standard": "^3.1.0",
+    "node-sass": "^5.0.0",
     "nodemon": "^2.0.12",
     "nuxt-windicss": "^1.2.3",
+    "sass-loader": "^10.1.1",
     "standard": "^10.0.3",
     "tailwindcss": "^2.2.10"
   },

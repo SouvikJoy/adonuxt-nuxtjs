@@ -16,18 +16,16 @@
 import IconSystem from '~/assets/icons/system.svg?inline'
 import IconLight from '~/assets/icons/light.svg?inline'
 import IconDark from '~/assets/icons/dark.svg?inline'
-import IconSepia from '~/assets/icons/sepia.svg?inline'
 export default {
   name: 'ColorModePicker',
   components: {
     IconSystem,
     IconLight,
-    IconDark,
-    IconSepia
+    IconDark
   },
   data () {
     return {
-      colors: ['system', 'light', 'dark', 'sepia']
+      colors: ['system', 'light', 'dark']
     }
   },
   methods: {
@@ -44,7 +42,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped lang="scss">
 ul {
   list-style: none;
   padding: 0;
