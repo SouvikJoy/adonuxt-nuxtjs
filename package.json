@@ -1,0 +1,89 @@
+{
+  "name": "morgan-design",
+  "version": "1.0.0",
+  "adonis-version": "4.1.0",
+  "description": "",
+  "license": "MIT",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "serve:dev": "npm run lint && npm run dev",
+    "dev": "nodemon --watch app --watch start --watch config --watch .env -x node server.js",
+    "build": "node ./ace nuxtbuild",
+    "start": "cross-env NODE_ENV=production node server.js",
+    "precommit": "npm run lint",
+    "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint:fix": "eslint --fix --ext \".js,.vue\" --ignore-path .gitignore .",
+    "lint": "npm run lint:fix",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "dependencies": {
+    "@adonisjs/ace": "^5.1.0",
+    "@adonisjs/auth": "^3.0.7",
+    "@adonisjs/bodyparser": "~2.0.9",
+    "@adonisjs/cors": "^1.0.7",
+    "@adonisjs/fold": "^4.0.9",
+    "@adonisjs/framework": "^5.0.9",
+    "@adonisjs/ignitor": "^2.0.8",
+    "@adonisjs/lucid": "^6.1.3",
+    "@adonisjs/session": "^1.0.27",
+    "@adonisjs/shield": "^1.0.8",
+    "@nuxtjs/axios": "^5.13.6",
+    "adonis-mongoose-model": "^3.2.0",
+    "core-js": "^3.15.2",
+    "cross-env": "^7.0.3",
+    "nuxt": "^2.15.8",
+    "youch": "^2.2.2"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.15.4",
+    "@nuxt/types": "^2.15.8",
+    "@nuxtjs/color-mode": "^2.1.1",
+    "@nuxtjs/eslint-config": "^6.0.1",
+    "@nuxtjs/eslint-module": "^3.0.2",
+    "@nuxtjs/router": "^1.6.1",
+    "@nuxtjs/style-resources": "^1.2.1",
+    "@nuxtjs/svg": "^0.2.0",
+    "babel-core": "7.0.0-bridge.0",
+    "chokidar": "^3.5.1",
+    "css-loader": "^5.2.6",
+    "eslint": "^7.32.0",
+    "eslint-plugin-nuxt": "^2.0.0",
+    "eslint-plugin-vue": "^7.12.1",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.12",
+    "npm-force-resolutions": "^0.0.10",
+    "nuxt-property-decorator": "^2.9.1",
+    "nuxt-viewport": "0.0.4",
+    "nuxt-windicss": "^1.2.3",
+    "sass-loader": "^10.1.0"
+  },
+  "resolutions": {
+    "glob-parent": "5.1.2",
+    "trim-newlines": "3.0.1"
+  },
+  "standard": {
+    "global": [
+      "use",
+      "make"
+    ]
+  },
+  "autoload": {
+    "App": "./app"
+  },
+  "author": {
+    "name": "Debugger Tech",
+    "email": "contact@debugger.tech",
+    "url": "https://debugger.tech"
+  },
+  "contributors": [
+    {
+      "name": "Jonson B.",
+      "email": "john@debugger.tech"
+    },
+    {
+      "name": "Souvik Saha Joy",
+      "email": "souvik@debugger.tech"
+    }
+  ]
+}
