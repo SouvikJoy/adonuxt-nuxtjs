@@ -7,7 +7,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Adonuxt',
+    titleTemplate: 'Morgan-Design - %s',
     meta: [
       {
         charset: 'utf-8'
@@ -19,7 +19,7 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: 'Adonuxt project'
+        content: 'Textile Company Website'
       }
     ],
     link: [
@@ -29,6 +29,24 @@ module.exports = {
         href: 'favicon.ico'
       }
     ]
+  },
+
+  buildModules: [
+    '@nuxtjs/color-mode',
+    'nuxt-windicss',
+    '@nuxtjs/svg'
+  ],
+
+  tailwindcss: {
+    jit: true,
+    // add '~tailwind.config` alias
+    exposeConfig: true
+  },
+  colorMode: {
+    classSuffix: ''
+  },
+  router: {
+    linkExactActiveClass: 'text-yellow-700 border-b-4 border-b-yellow-500'
   },
   /*
   ** Global CSS
