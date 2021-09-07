@@ -6,11 +6,6 @@ html, body
   font-family: "Source Sans Pro", Arial, sans-serif;
   min-height: 100vh;
   margin: 0;
-
-  .dark-mode & {
-    background-color: var(--dark);
-    color: var(--light)
-  }
 }
 
 footer

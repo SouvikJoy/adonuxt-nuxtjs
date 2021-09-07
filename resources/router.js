@@ -3,6 +3,8 @@ import Router from 'vue-router';
 
 import Index from '~/pages/Index';
 import About from '~/pages/About';
+import Products from '~/pages/Products';
+import Contact from '~/pages/Contact';
 
 Vue.use(Router);
 
@@ -16,6 +18,16 @@ const routes = [
     path: '/about',
     name: 'about',
     component: About
+  },
+  {
+    path: '/products',
+    name: 'products',
+    component: Products
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: Contact
   }
 ];
 

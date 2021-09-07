@@ -4,7 +4,7 @@
       <Header />
     </header>
     <main>
-      <nuxt />
+      <nuxt :key="$route.fullPath" />
     </main>
     <Footer />
   </div>

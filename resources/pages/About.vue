@@ -1,19 +1,11 @@
-{{{{raw}}}}
 <template>
-  <section class="container">
-    <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo">
-    <h1 class="title">
-      This page is loaded from the {{ name }}
+  <div class="grid place-items-center h-screen bg-red-200">
+    <h1 class="text-7xl">
+      AboutPage - 1
     </h1>
-    <h2 v-if="name === 'client'" class="info">
-      Please refresh the page
-    </h2>
-    <nuxt-link class="button" to="/">
-      Home page
-    </nuxt-link>
-  </section>
+  </div>
 </template>
-{{{{/raw}}}}
+
 <script>
 import { Component, mixins } from 'nuxt-property-decorator';
 import App from '~/mixins/app';

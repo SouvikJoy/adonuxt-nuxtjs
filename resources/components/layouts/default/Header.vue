@@ -2,7 +2,7 @@
   <nav class="container mx-auto py-2">
     <div class="flex justify-around place-items-center">
       <div>
-        <img src="~/assets/img/logo.png" alt="" class="w-[80px]">
+        <img src="~/assets/img/logo.png" alt="" class="w-[170px]">
       </div>
       <div>
         <nuxt-link :to="{ name: 'index' }" class="p-2">
@@ -10,6 +10,12 @@
         </nuxt-link>
         <nuxt-link :to="{ name: 'about' }" class="p-2">
           About
+        </nuxt-link>
+        <nuxt-link :to="{ name: 'products' }" class="p-2">
+          Products
+        </nuxt-link>
+        <nuxt-link :to="{ name: 'contact' }" class="p-2">
+          Contact
         </nuxt-link>
       </div>
     </div>
