@@ -1,6 +1,6 @@
 <template>
   <div v-if="loading" class="loading-page">
-    <div class="loading" />
+    <img src="~/assets/img/logo.png" class="loading">
   </div>
 </template>
 <script>
@@ -21,12 +21,13 @@ export default {
 <style scoped>
 .loading-page {
   position: fixed;
-  top: 0;
-  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 250, 0, 0.98);
   z-index: 1000;
   padding: 1rem;
   text-align: center;
-  font-size: 3rem;
+  font-size: 0.8rem;
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
@@ -35,16 +36,19 @@ export default {
 }
 .loading {
   display: inline-block;
-  width: 1.5rem;
-  height: 1.5rem;
-  border: 4px solid rgba(9, 133, 81, 0.705);
-  border-radius: 50%;
-  border-top-color: #158876;
-  animation: spin 1s ease-in-out infinite;
+  width: 10rem;
+  height: 10rem;
+  animation: zoomInOut 1s ease-in-out;
 }
-@keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
+@keyframes zoomInOut {
+  0% {
+    -webkit-transform: scale(0.5);
+  }
+  50% {
+    -webkit-transform: scale(1.25);
+  }
+  100% {
+    -webkit-transform: scale(1);
   }
 }
 </style>
