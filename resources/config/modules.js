@@ -4,5 +4,7 @@
  ========================================================================================== */
 module.exports = [
   '@nuxtjs/axios',
-  '@nuxtjs/color-mode'
+  '@nuxtjs/pwa',
+  '@nuxtjs/color-mode',
+  'nuxt-helmet'
 ];

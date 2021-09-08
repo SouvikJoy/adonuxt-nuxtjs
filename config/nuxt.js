@@ -4,14 +4,15 @@ const resolve = require('path').resolve;
 const {
   axios,
   build,
+  helmet,
   buildModules,
-  bootstrapVue,
   css,
   colorMode,
   head,
   modules,
   pwa,
-  styleResources
+  styleResources,
+  render
 } = require('../resources/config');
 
 module.exports = {
@@ -19,9 +20,9 @@ module.exports = {
 
   build,
 
-  buildModules,
+  helmet,
 
-  bootstrapVue,
+  buildModules,
 
   colorMode,
 
@@ -50,6 +51,8 @@ module.exports = {
   pwa,
 
   styleResources,
+
+  render,
 
   telemetry: false
 };

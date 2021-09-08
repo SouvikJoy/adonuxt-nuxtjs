@@ -22,7 +22,9 @@ import Footer from '~/components/layouts/default/Footer';
     Header
   }
 })
-export default class DefaultLayout extends mixins(App) {}
+export default class DefaultLayout extends mixins(App) {
+
+}
 </script>
 
 <style lang="scss">

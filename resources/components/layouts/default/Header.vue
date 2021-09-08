@@ -2,7 +2,13 @@
   <nav class="container mx-auto py-2">
     <div class="flex justify-around place-items-center">
       <NuxtLink :to="{ name: 'index' }" class="flex place-items-center">
-        <img src="~/assets/img/logo.png" alt="" class="w-[36px] pt-1.5">
+        <img
+          width="600"
+          height="400"
+          src="~/assets/img/logo.png"
+          alt=""
+          class="w-[36px] pt-1.5 h-full"
+        >
         <h1 class="pt-1.5 px-3 text-xl text-white">
           Morgan Design
         </h1>

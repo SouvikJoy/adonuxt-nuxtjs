@@ -6,9 +6,9 @@
           <h1 class="text-7xl font-bold mb-2">
             Heading
           </h1>
-          <h6 class="text-3xl mb-4">
+          <p class="text-3xl mb-4">
             Sub-Heading
-          </h6>
+          </p>
           <p class="text-gray-400">
             Lorem Ipsum is simply dummy
             text of the printing and typesetting industry.
@@ -19,8 +19,14 @@
             Query
           </button>
         </div>
-        <div class="justify-self-end">
-          <img src="~/assets/img/icon.png" alt="">
+        <div>
+          <img
+            width="600"
+            height="400"
+            src="~/assets/img/icon.png"
+            alt=""
+            class="h-full w-full"
+          >
         </div>
       </div>
     </div>
@@ -28,25 +34,43 @@
     <div class="grid h-[100vh] bg-black text-white">
       <div class="grid grid-cols-2 place-items-center gap-16 max-w-[1200px] mx-auto">
         <div class="justify-self-end">
-          <img src="~/assets/img/ribbon.jpg" alt="">
+          <img
+            width="600"
+            height="400"
+            src="~/assets/img/bg-3.jpg"
+            alt=""
+            class="h-full w-full"
+          >
         </div>
         <div class="grid grid-rows-2">
           <div class="grid grid-cols-2">
             <div class="p-6">
-              <img src="~/assets/icons/icon-white-1.svg" alt="" class="mb-2">
-              <h4 class="text-3xl mb-4">
+              <img
+                width="600"
+                height="400"
+                src="~/assets/icons/icon-white-1.svg"
+                alt=""
+                class="mb-2 h-20 w-20"
+              >
+              <p class="text-3xl mb-4">
                 Sub-Heading
-              </h4>
+              </p>
               <p class="text-gray-400">
                 Lorem Ipsum is simply dummy
                 text of the printing and typesetting industry.
               </p>
             </div>
             <div class="p-6">
-              <img src="~/assets/icons/icon-white-2.svg" alt="" class="mb-2">
-              <h4 class="text-3xl mb-4">
+              <img
+                width="600"
+                height="400"
+                src="~/assets/icons/icon-white-2.svg"
+                alt=""
+                class="mb-2 h-20 w-20"
+              >
+              <p class="text-3xl mb-4">
                 Sub-Heading
-              </h4>
+              </p>
               <p class="text-gray-400">
                 Lorem Ipsum is simply dummy
                 text of the printing and typesetting industry.
@@ -55,20 +79,32 @@
           </div>
           <div class="grid grid-cols-2">
             <div class="p-6">
-              <img src="~/assets/icons/icon-white-1.svg" alt="" class="mb-2">
-              <h4 class="text-3xl mb-4">
+              <img
+                width="600"
+                height="400"
+                src="~/assets/icons/icon-white-1.svg"
+                alt=""
+                class="mb-2 h-20 w-20"
+              >
+              <p class="text-3xl mb-4">
                 Sub-Heading
-              </h4>
+              </p>
               <p class="text-gray-400">
                 Lorem Ipsum is simply dummy
                 text of the printing and typesetting industry.
               </p>
             </div>
             <div class="p-6">
-              <img src="~/assets/icons/icon-white-2.svg" alt="" class="mb-2">
-              <h4 class="text-3xl mb-4">
+              <img
+                width="600"
+                height="400"
+                src="~/assets/icons/icon-white-2.svg"
+                alt=""
+                class="mb-2 h-20 w-20"
+              >
+              <p class="text-3xl mb-4">
                 Sub-Heading
-              </h4>
+              </p>
               <p class="text-gray-400">
                 Lorem Ipsum is simply dummy
                 text of the printing and typesetting industry.
@@ -85,6 +121,7 @@
 import { Component, mixins } from 'nuxt-property-decorator';
 import App from '~/mixins/app';
 @Component({
+  head () { return { title: 'Home' }; },
   components: {
 
   }

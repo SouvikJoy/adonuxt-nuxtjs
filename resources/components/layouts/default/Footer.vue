@@ -1,7 +1,12 @@
 <template>
   <div class="flex justify-around place-items-center">
     <div>
-      &copy; {{ new Date().getFullYear() }} | <a href="https://debugger.tech" target="_blank">Debugger.tech</a>
+      &copy; {{ new Date().getFullYear() }} | <a
+        href="https://debugger.tech"
+        rel="noopener"
+        target="_blank"
+        :style="{ color: 'black', fontWeight: '700' }"
+      >Debugger.tech</a>
     </div>
     <div>
       <ColorModePicker />
