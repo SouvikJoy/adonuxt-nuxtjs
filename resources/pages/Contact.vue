@@ -14,7 +14,14 @@ import App from '~/mixins/app';
 export default class Contact extends mixins(App) {
   head () {
     return {
-      title: 'Contact'
+      title: 'Contact',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Contact Nuxt'
+        }
+      ]
     };
   }
 }

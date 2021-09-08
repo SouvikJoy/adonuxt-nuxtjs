@@ -14,8 +14,22 @@ import App from '~/mixins/app';
 export default class About extends mixins(App) {
   head () {
     return {
-      title: 'About'
+      title: 'About',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'About Nuxt'
+        }
+      ]
     };
+  }
+
+  mounted () {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start();
+      setTimeout(() => this.$nuxt.$loading.finish(), 2000);
+    });
   }
 }
 </script>

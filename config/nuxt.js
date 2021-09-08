@@ -42,7 +42,7 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#1b2529' },
+  loading: '~/components/LoadingBar.vue',
   /*
    ** Point to resources
    */

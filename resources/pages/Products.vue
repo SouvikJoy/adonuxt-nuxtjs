@@ -14,7 +14,14 @@ import App from '~/mixins/app';
 export default class Products extends mixins(App) {
   head () {
     return {
-      title: 'Products'
+      title: 'Products',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Products Nuxt'
+        }
+      ]
     };
   }
 }
