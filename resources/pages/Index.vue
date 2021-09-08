@@ -9,7 +9,7 @@
           <p class="text-md mb-0 md:text-3xl md:mb-4 text-center md:text-left">
             Sub-Heading
           </p>
-          <p class="px-4 md:px-0 text-[14px] md:text-[16px] text-gray-400 text-center md:text-left">
+          <p class="px-4 md:px-0 text-[14px] md:text-[16px] text-gray-400 text-center md:text-left leading-[24px] md:leading-normal">
             Lorem Ipsum is simply dummy
             text of the printing and typesetting industry.
             Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,

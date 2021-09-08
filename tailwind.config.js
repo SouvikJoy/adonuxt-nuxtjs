@@ -1,6 +1,14 @@
 module.exports = {
   purge: [],
   presets: [],
+  shortcuts: {
+    /* default */
+
+    /* index-page-1 */
+
+    /* router */
+    'morgan-link-exact-active': 'text-yellow-400'
+  },
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     screens: {
