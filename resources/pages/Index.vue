@@ -157,7 +157,18 @@
 import { Component, mixins } from 'nuxt-property-decorator';
 import App from '~/mixins/app';
 @Component({
-  head () { return { title: 'Home' }; },
+  head () {
+    return {
+      title: 'Home',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Home page description'
+        }
+      ]
+    };
+  },
   components: {
 
   }

@@ -21,18 +21,5 @@ export default class About extends mixins(App) {
 </script>
 
 <style lang="scss">
-.title
-{
-  margin-top: 50px;
-}
-.info
-{
-  font-weight: 300;
-  color: #9aabb1;
-  margin: 10px 0 0;
-}
-.button
-{
-  margin-top: 50px;
-}
+
 </style>

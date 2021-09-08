@@ -7,7 +7,7 @@ module.exports = {
     /* index-page-1 */
 
     /* router */
-    'morgan-link-exact-active': 'text-yellow-400'
+    'morgan-link-exact-active': 'text-yellow-800 dark:text-yellow-400'
   },
   darkMode: 'class', // or 'media' or 'class'
   theme: {
