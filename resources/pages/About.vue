@@ -10,7 +10,10 @@
 import { Component, mixins } from 'nuxt-property-decorator';
 import App from '~/mixins/app';
 
-@Component
+@Component({
+  transition: 'bounce'
+})
+
 export default class About extends mixins(App) {
   head () {
     return {

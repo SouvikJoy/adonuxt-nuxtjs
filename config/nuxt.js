@@ -6,6 +6,7 @@ const {
   build,
   helmet,
   buildModules,
+  gsap,
   css,
   colorMode,
   head,
@@ -24,28 +25,20 @@ module.exports = {
 
   buildModules,
 
+  gsap,
+
   colorMode,
 
   modules,
-  /*
-   ** Headers of the page
-   */
+
   head,
-  /*
-   ** Global CSS
-   */
+
   css,
-  /*
-   ** Auto import components
-   */
+
   components: false,
-  /*
-   ** Customize the progress-bar color
-   */
-  loading: '~/components/LoadingBar.vue',
-  /*
-   ** Point to resources
-   */
+
+  // loading: '~/components/LoadingBar.vue',
+
   srcDir: resolve(__dirname, '..', 'resources'),
 
   pwa,

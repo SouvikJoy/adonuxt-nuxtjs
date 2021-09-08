@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex">
+  <div>
     <ul>
       <li v-for="color of colors" :key="color">
         <component
@@ -13,32 +13,36 @@
 </template>
 
 <script>
+import { Component, mixins } from 'nuxt-property-decorator';
 import IconSystem from '~/assets/icons/system.svg?inline';
 import IconLight from '~/assets/icons/light.svg?inline';
 import IconDark from '~/assets/icons/dark.svg?inline';
-export default {
+
+import App from '~/mixins/app';
+
+@Component({
   components: {
     IconSystem,
     IconLight,
     IconDark
-  },
-  data () {
-    return {
-      colors: ['system', 'light', 'dark']
-    };
-  },
-  methods: {
-    getClasses (color) {
-      if (this.$colorMode.unknown) {
-        return {};
-      }
-      return {
-        preferred: color === this.$colorMode.preference,
-        selected: color === this.$colorMode.value
-      };
-    }
   }
-};
+})
+
+export default class ColorModePicker extends mixins(App) {
+  get colors () {
+    return this.$store.state.colors;
+  }
+
+  getClasses (color) {
+    if (this.$colorMode.unknown) {
+      return {};
+    }
+    return {
+      preferred: color === this.$colorMode.preference,
+      selected: color === this.$colorMode.value
+    };
+  }
+}
 </script>
 
 <style lang="scss">
@@ -66,15 +70,5 @@ p {
   margin: 0;
   border-radius: 5px;
   transition: all 0.1s ease;
-}
-.feather:hover {
-  top: -3px;
-}
-.feather.preferred {
-  border-color: var(--color-primary);
-  top: -3px;
-}
-.feather.selected {
-  color: var(--color-primary);
 }
 </style>

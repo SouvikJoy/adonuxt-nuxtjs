@@ -23,7 +23,7 @@ export default {
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 250, 0, 0.98);
+  background-color: rgba(255, 221, 0, 0.98);
   z-index: 1000;
   padding: 1rem;
   text-align: center;

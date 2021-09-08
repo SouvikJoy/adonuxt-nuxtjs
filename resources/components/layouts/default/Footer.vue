@@ -24,7 +24,9 @@ import ColorModePicker from '~/components/ColorModePicker';
 @Component({
   components: { ColorModePicker }
 })
-export default class DefaultFooter extends mixins(App) {}
+export default class DefaultFooter extends mixins(App) {
+
+}
 </script>
 
 <style lang="scss">

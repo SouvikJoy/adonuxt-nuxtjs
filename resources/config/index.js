@@ -3,6 +3,7 @@ module.exports = {
   build: require('./build'),
   helmet: require('./helmet'),
   buildModules: require('./buildModules'),
+  gsap: require('./gsap'),
   colorMode: require('./colorMode'),
   css: require('./css'),
   env: require('./env'),

@@ -3,11 +3,38 @@ module.exports = {
   presets: [],
   shortcuts: {
     /* default */
+    default_header: 'fixed w-full bg-white dark:bg-black dark:bg-opacity-[75%] bg-opacity-[75%]',
 
     /* index-page-1 */
+    dt_index_page_1: 'grid h-[100vh] bg-opacity-50 text-white bg-no-repeat bg-cover',
+    dt_index_page_1_content: 'grid md:grid-cols-2 md:gap-16 place-items-center max-w-[1024px] mx-auto',
+    dt_index_page_1_content_left: 'grid place-items-center md:block order-last xl:order-first',
+    dt_index_page_1_content_left_heading: 'text-5xl md:text-7xl font-bold md:mb-2 text-center md:text-left',
+    dt_index_page_1_content_left_subHeading: 'text-md mb-0 md:text-3xl md:mb-4 text-center md:text-left',
+    dt_index_page_1_content_left_description: 'px-4 md:px-0 text-[14px] md:text-[16px] text-gray-400 text-center md:text-left leading-[24px] md:leading-normal',
+    dt_index_page_1_content_left_queryButton: 'px-6 py-2 rounded text-sm md:px-16 md:py-4 bg-gradient-to-r from-yellow-400 to-red-500 md:rounded-2xl hover:shadow-lg hover:bg-purple-500 hover:text-2xl hover:text-white md:text-xl font-bold outline-none',
 
+    /* index-page-2 */
+    dt_index_page_2: 'grid place-items-center min-h-[100vh] md:text-left text-center',
+    dt_index_page_2_content: 'grid md:grid-cols-2 place-items-center md:gap-16 max-w-[1200px] mx-auto',
+    dt_index_page_2_content_left: 'py-6',
+    dt_index_page_2_content_right: 'grid md:grid-cols-2',
     /* router */
-    'morgan-link-exact-active': 'text-yellow-800 dark:text-yellow-400'
+    'morgan-link-exact-active': 'text-yellow-800 dark:text-yellow-400',
+
+    /* as per components */
+
+    /* components/layouts/default/Header */
+    dt_defaultHeader_content: 'container mx-auto py-2',
+    dt_defaultHeader_content_wrapper: 'flex justify-between mx-4 md:mx-0 md:justify-around place-items-center',
+    dt_defaultHeader_content_menuIcon: 'md:hidden',
+    dt_defaultHeader_content_brand: 'flex place-items-center',
+    dt_defaultHeader_content_brandIcon: 'w-[36px] pt-1.5 h-full',
+    dt_defaultHeader_content_brandName: 'pt-1.5 px-3 text-[10px] md:text-xl text-black dark:text-white',
+    dt_defaultHeader_content_middle: 'hidden md:block',
+    dt_defaultHeader_content_middle_link: 'p-2',
+    dt_defaultHeader_content_right_themeIcon: 'fill-current'
+
   },
   darkMode: 'class', // or 'media' or 'class'
   theme: {

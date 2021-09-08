@@ -55,6 +55,7 @@
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.12",
     "npm-force-resolutions": "^0.0.10",
+    "nuxt-gsap-module": "^1.4.0",
     "nuxt-property-decorator": "^2.9.1",
     "nuxt-viewport": "0.0.4",
     "nuxt-windicss": "^1.2.3",

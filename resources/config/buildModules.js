@@ -7,5 +7,6 @@ module.exports = [
   '@nuxtjs/router',
   '@nuxtjs/style-resources',
   '@nuxtjs/svg',
-  'nuxt-windicss'
+  'nuxt-windicss',
+  'nuxt-gsap-module'
 ];
