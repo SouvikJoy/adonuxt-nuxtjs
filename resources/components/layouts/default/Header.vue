@@ -9,11 +9,11 @@
           alt=""
           class="w-[36px] pt-1.5 h-full"
         >
-        <h1 class="pt-1.5 px-3 text-xl text-white">
+        <h1 class="pt-1.5 px-3 text-[10px] md:text-xl text-black dark:text-white">
           Morgan Design
         </h1>
       </NuxtLink>
-      <div>
+      <div class="hidden md:block">
         <nuxt-link :to="{ name: 'index' }" class="p-2">
           Home
         </nuxt-link>

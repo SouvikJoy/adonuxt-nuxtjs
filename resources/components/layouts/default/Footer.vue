@@ -1,12 +1,15 @@
 <template>
   <div class="flex justify-around place-items-center">
     <div>
-      &copy; {{ new Date().getFullYear() }} | <a
+      &copy; {{ new Date().getFullYear() }} |
+      <a
         href="https://debugger.tech"
         rel="noopener"
         target="_blank"
-        :style="{ color: 'black', fontWeight: '700' }"
-      >Debugger.tech</a>
+        class="dark:text-white font-bold"
+      >
+        Debugger.tech
+      </a>
     </div>
     <div>
       <ColorModePicker />
