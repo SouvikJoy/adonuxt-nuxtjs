@@ -105,12 +105,6 @@ import ServiceBox from '~/components/pageComponents/Index/ServiceBox';
   }
 })
 export default class Index extends mixins(App) {
-  async asyncData ({ $axios }) {
-    const data = await $axios.$get('products');
-    console.log(data);
-    return { products: data };
-  }
-
   get services () {
     return this.$store.state.services;
   }

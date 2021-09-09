@@ -37,7 +37,7 @@ module.exports = {
 
   components: false,
 
-  // loading: '~/components/LoadingBar.vue',
+  loading: '~/components/LoadingBar.vue',
 
   srcDir: resolve(__dirname, '..', 'resources'),
 
