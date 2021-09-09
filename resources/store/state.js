@@ -8,6 +8,25 @@ export default () => ({
     appIcon: require('~/assets/img/icon.png')
   },
 
+  navLinks: [
+    {
+      name: 'Home',
+      to: 'index'
+    },
+    {
+      name: 'About',
+      to: 'about'
+    },
+    {
+      name: 'Products',
+      to: 'products'
+    },
+    {
+      name: 'Contact',
+      to: 'contact'
+    }
+  ],
+
   services: [
     {
       id: 1,

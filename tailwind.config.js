@@ -3,6 +3,7 @@ module.exports = {
   presets: [],
   shortcuts: {
     /* default */
+    default_app: 'dark:bg-black dark:text-white',
     default_header: 'fixed w-full bg-white dark:bg-black dark:bg-opacity-[75%] bg-opacity-[75%]',
 
     /* index-page-1 */
@@ -18,7 +19,7 @@ module.exports = {
     dt_index_page_2: 'grid place-items-center min-h-[100vh] md:text-left text-center',
     dt_index_page_2_content: 'grid md:grid-cols-2 place-items-center md:gap-16 max-w-[1200px] mx-auto',
     dt_index_page_2_content_left: 'py-6',
-    dt_index_page_2_content_right: 'grid md:grid-cols-2',
+    dt_index_page_2_content_right: 'grid grid-cols-2',
     /* router */
     'morgan-link-exact-active': 'text-yellow-800 dark:text-yellow-400',
 
@@ -33,7 +34,10 @@ module.exports = {
     dt_defaultHeader_content_brandName: 'pt-1.5 px-3 text-[10px] md:text-xl text-black dark:text-white',
     dt_defaultHeader_content_middle: 'hidden md:block',
     dt_defaultHeader_content_middle_link: 'p-2',
-    dt_defaultHeader_content_right_themeIcon: 'fill-current'
+    dt_defaultHeader_content_right_themeIcon: 'fill-current',
+
+    /* extra */
+    selected: 'text-yellow-800 dark:text-yellow-400'
 
   },
   darkMode: 'class', // or 'media' or 'class'

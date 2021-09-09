@@ -1,10 +1,10 @@
 <template>
-  <div class="dark:bg-black dark:text-white">
+  <div class="default_app">
     <header class="default_header">
       <DefaultHeader />
     </header>
     <main class="default_main">
-      <nuxt :key="$route.fullPath" />
+      <nuxt :key="$route.fullPath" keep-alive />
     </main>
     <footer class="default_footer">
       <DefaultFooter />

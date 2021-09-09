@@ -1,7 +1,7 @@
 <template>
   <nav class="dt_defaultHeader_content">
     <div class="dt_defaultHeader_content_wrapper">
-      <div class="dt_defaultHeader_content_menuIcon">
+      <div class="dt_defaultHeader_content_menuIcon" @click.prevent="sidebarOpen = !sidebarOpen">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -26,7 +26,7 @@
         <img
           width="600"
           height="400"
-          src="~/assets/img/logo.png"
+          :src="appInfo.appIcon"
           alt=""
           class="dt_defaultHeader_content_brandIcon"
         >
@@ -36,18 +36,13 @@
       </NuxtLink>
 
       <div class="dt_defaultHeader_content_middle">
-        <nuxt-link :to="{ name: 'index' }" class="dt_defaultHeader_content_middle_link">
-          Home
-        </nuxt-link>
-        <nuxt-link :to="{ name: 'about' }" class="dt_defaultHeader_content_middle_link">
-          About
-        </nuxt-link>
-        <nuxt-link :to="{ name: 'products' }" class="dt_defaultHeader_content_middle_link">
-          Products
-        </nuxt-link>
-        <nuxt-link :to="{ name: 'contact' }" class="dt_defaultHeader_content_middle_link">
-          Contact
-        </nuxt-link>
+        <ul>
+          <li v-for="(navLink, index) in navLinks" :key="index">
+            <nuxt-link :to="{ name: navLink.to }" class="dt_defaultHeader_content_middle_link">
+              {{ navLink.name }}
+            </nuxt-link>
+          </li>
+        </ul>
       </div>
 
       <div>
@@ -67,22 +62,52 @@
         </svg>
       </div>
     </div>
+    <MobileSidebar v-model="sidebarOpen">
+      <div class="flex place-items-center justify-center mb-6">
+        <img
+          width="600"
+          height="400"
+          :src="appInfo.appIcon"
+          alt=""
+          class="w-10 mr-2"
+        >
+        <h1 class="text-2xl">
+          Morgan Design
+        </h1>
+      </div>
+      <ul>
+        <li v-for="(navLink, index) in navLinks" :key="index" class="list-item">
+          <nuxt-link :to="{ name: navLink.to }" class="dt_defaultHeader_content_middle_link">
+            {{ navLink.name }}
+          </nuxt-link>
+        </li>
+      </ul>
+    </MobileSidebar>
   </nav>
 </template>
 
 <script>
 import { Component, mixins, Vue } from 'nuxt-property-decorator';
 import App from '~/mixins/app';
+import MobileSidebar from '~/components/pageComponents/MobileSidebar';
 
 @Component({
-
+  components: { MobileSidebar }
 })
 
 export default class DefaultHeader extends mixins(App) {
+  sidebarOpen = false
 
+  get appInfo () {
+    return this.$store.state.appInfo;
+  }
+
+  get navLinks () {
+    return this.$store.state.navLinks;
+  }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 
 </style>

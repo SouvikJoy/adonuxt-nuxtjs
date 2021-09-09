@@ -64,11 +64,12 @@ p {
   position: relative;
   top: 0;
   cursor: pointer;
-  padding: 7px;
+  padding: 2px;
   background-color: var(--bg-secondary);
   border: 2px solid var(--border-color);
   margin: 0;
   border-radius: 5px;
   transition: all 0.1s ease;
 }
+
 </style>
