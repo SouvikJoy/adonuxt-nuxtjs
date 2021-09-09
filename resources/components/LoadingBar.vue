@@ -18,7 +18,7 @@ export default {
   }
 };
 </script>
-<style scoped>
+<style lang="scss">
 .loading-page {
   position: fixed;
   width: 100%;
@@ -26,13 +26,11 @@ export default {
   background-color: rgba(255, 221, 0, 0.98);
   z-index: 1000;
   padding: 1rem;
-  text-align: center;
-  font-size: 0.8rem;
-  font-family: sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  animation: opacityOut 1.5s ease;
 }
 .loading {
   display: inline-block;
@@ -49,6 +47,17 @@ export default {
   }
   100% {
     -webkit-transform: scale(1);
+  }
+}
+@keyframes opacityOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
   }
 }
 </style>
